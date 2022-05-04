@@ -1,3 +1,5 @@
+/* GENÉRICO - HEADER & FOOTER */
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -38,51 +40,6 @@ nav a:hover{
     color: #C78C19;
 }
 
-.produtos-lista{
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
-}
-
-.produtos-lista li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: black solid 2px;
-    border-radius: 10px;
-}
-
-.produtos-lista li:hover{
-    border-color: #C78C19;
-}
-
-.produtos-lista li:active{
-    border-color: #088C19;
-}
-
-.produtos-lista li:hover h2{
-    font-size: 34px;
-}
-
-.produtos-lista h2{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.produtos-lista-descricao{
-    font-size: 18px;
-}
-
-.produtos-lista-preco{
-    font-size: 22px;
-    font-weight: bold;
-    margin: 10px 0 0;
-}
-
 footer{
     text-align: center;
     background: url(./IMAGES/bg.jpg);
@@ -95,67 +52,11 @@ footer{
     margin-top: 20px;
 }
 
-main {
-
-}
-
-form {
-    margin: 40px 0;
-}
-
-form label, form legend {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 20px;
-}
-
-.input-padrao {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 20px;
-    width: 50%;
-}
-
-.checkbox{
-    margin: 20px 0;
-}
-
-.enviar{
-    width: 40%;
-    padding: 15px 0;
-    background: orange;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    transition: 0.3s all;
-    cursor: pointer;
-
-}
-
-.enviar:hover{
-    background: darkorange;
-    transform: scale(1.2);
-}
 
 
-table{
-    margin: 20px 0 40px;
-}
 
-thead{ 
-    background: #555555;
-    color: white;
-    font-weight: bold;
-}
 
-td, th{
-    border: 1px solid black;
-    padding: 8px 15px;
-}
-
-/* CSS DA PÁGINA INICIAL*/
+/* PÁGINA INICIAL*/
 .banner{
     width: 100%;
 }
@@ -252,7 +153,135 @@ td, th{
     margin: 2em auto;
 }
 
+
+
+
+
+/* ********* PÁGINA PRODUTOS ********* */
+
+.produtos-lista{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos-lista li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: black solid 2px;
+    border-radius: 10px;
+}
+
+.produtos-lista li:hover{
+    border-color: #C78C19;
+}
+
+.produtos-lista li:active{
+    border-color: #088C19;
+}
+
+.produtos-lista li:hover h2{
+    font-size: 34px;
+}
+
+.produtos-lista h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos-lista-descricao{
+    font-size: 18px;
+}
+
+.produtos-lista-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+
+
+
+
+/* ********* PÁGINA CONTATO ********* */
+
+.main-contato {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s all;
+    cursor: pointer;
+
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{ 
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+
+
+
+
+
+
+/* ********* MOBILE VERSION ********* */
+
 @media screen and (max-width: 480px) {
+    
+    /* HOME PAGE*/
     .caixa, .principal, .mapa-conteudo, .conteudo-beneficios, .video{
         width: auto;
     }
@@ -264,7 +293,61 @@ td, th{
         position: static;
     }
     
+    .principal, mapa{
+        padding: 20px;
+        text-align: center;
+    }
+
+    .imagem-utensilios, .video {
+        display: none;
+    }
+
+
+    .titulo-principal{
+        padding: 0 10px 0 10px;
+    }
+
     .beneficios-nav, .imagem-beneficios{
+        width: 90%;
+        padding: 0 20px 10px 20px;
+        box-shadow: none;
+    }
+
+
+    /* ********** PRODUTOS ********* */
+    .produtos-lista{
         width: 100%;
     }
+    
+    .produtos-lista li{
+        display: block;
+        width: 80%;
+        margin: 25px auto;
+    }
+
+
+    /* ********** CONTATO ********** */
+    .main-contato{
+        width: calc(100% - 40px);
+    }
+
+    .input-padrao{
+        width: 80%;
+    }
+
+    select{
+        width: 50%;
+        font-size: 1em;
+    }
+
+    .enviar{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    table{
+        margin: 0 auto 30px;
+        width: 60%;
+    }
+
 }
